@@ -1,0 +1,230 @@
+header {
+  background-color: #007765;
+  height: 6em;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header > img {
+  height: 2.5em;
+  margin-top: 2%;
+  margin-left: 3%;
+}
+
+header > p {
+  font-size: 1.5em;
+  line-height: 28, 13px;
+  color: white;
+  left: 741px;
+  top: 0px;
+  margin-right: 3%;
+}
+
+* {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+}
+
+.content-banner > h1 {
+  color: white;
+  font-size: 480%;
+  align-self: center;
+}
+
+.content-banner,
+.content-second-banner {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+.content-banner {
+  margin-top: 7%;
+  background: url(imgs/image.png);
+}
+
+.content-second-banner {
+  background: url(imgs/image-2.png);
+}
+
+.content-second-banner > h2 {
+  font-size: 48px;
+  line-height: 56px;
+  color: white;
+  font-style: italic;
+  text-align: center;
+  margin: 0 10% 0 10%;
+}
+
+.content-text > h1,
+.content-team > h1 {
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color: #007765;
+}
+
+.content-text > p,
+.image-with-text > p {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37, 5px;
+  color: black;
+  text-align: left;
+  margin: 0 6% 0 6%;
+  padding: 2%;
+}
+
+.image-with-text > img {
+  float: left;
+  margin-right: 4%;
+  margin-top: 2%;
+}
+
+.image-with-text {
+  margin-left: 7%;
+}
+
+.content-second-banner + .content-text {
+  background-color: white;
+}
+
+.content-text,
+.content-team {
+  width: 100%;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  background-color: #eeeeee;
+}
+
+.content-team > table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+figcaption {
+  color: #007765;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+figure > p {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 20%;
+}
+
+header ~ div {
+  background-color: #eeeeee;
+}
+
+.clear {
+  clear: both;
+}
+
+footer {
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #333333;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: white;
+}
+
+footer > p {
+  margin: 3% 28% 3% 28%;
+}
+
+#mobile-view-table{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .content-team > table {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .content-team > table {
+      max-width: 10px;
+  }
+
+  figure > img {
+      width: 100%;
+  }
+
+  figcaption {
+    font-size: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  figcaption + p {
+    font-size: 80%;
+    
+  }
+
+  header > p {
+    font-size: smaller;
+  }
+
+  header {
+    height: 3.5em;
+  }
+
+  .content-banner,
+  .content-second-banner,
+  .content-text,
+  .content-team,
+  footer {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .content-banner > h1 {
+    font-size: 300%;
+  }
+
+  .content-text > h1,
+  .content-team > h1 {
+    font-size: 200%;
+  }
+
+  .content-text > p,
+  .content-team > p,
+  .image-with-text > p {
+      font-size: 100%;
+      text-align: center;
+  }
+
+  .content-second-banner > h2 {
+      font-size: 150%;
+  }
+
+  footer > p {
+      margin: 2% 0 2% 0;
+      font-size: 80%;
+  }
+
+  #figure-5, #figure-8{
+      display: none;
+  }
+
+  #mobile-view-table{
+    display: table-row;
+}
+}
